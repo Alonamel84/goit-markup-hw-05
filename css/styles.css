@@ -53,15 +53,22 @@ header .container {
   display: inline-block;
   margin-right: 93px;
 }
-a.logo {
+
+.nav-container .logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+/* a.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+} */
 .logo-color {
   color: #000000;
 }
 .logo-color-footer {
   color: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 0%;
 }
 .list {
   list-style: none;
@@ -236,6 +243,28 @@ img {
 .scope {
   padding-bottom: 94px;
 }
+.scope-description {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  position: sticky;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  overflow: initial;
+  transform: translateY(-100%);
+}
+.scope-description-overlay {
+  position: relative;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -420,6 +449,7 @@ footer {
 }
 .left-footer {
   margin-right: 70px;
+  padding-top: 60px;
 }
 
 .address {
@@ -591,7 +621,7 @@ li.item:nth-child(-n + 6) {
   position: relative;
   overflow: hidden;
 }
-.card-overlay:focus .text-overlay,
+
 .card-overlay:hover .text-overlay {
   transform: translateY(0%);
 }
