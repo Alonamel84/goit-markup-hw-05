@@ -586,7 +586,7 @@ li.item:nth-child(-n + 6) {
   pointer-events: auto;
   transition: opacity 500ms linear, visibility 500ms linear;
 }
-.backdrop. is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
