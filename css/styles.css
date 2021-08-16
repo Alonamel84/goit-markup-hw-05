@@ -105,6 +105,7 @@ header .container {
   position: absolute;
   bottom: 0;
   left: 0%;
+  border-radius: 2px;
 }
 
 .nav-container-item a {
@@ -556,8 +557,10 @@ ul.list.portfolio-btn {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
-  padding: 6px, 22px;
+  padding: 6px 22px;
   flex-direction: row;
+  border: transparent;
+  border-width: 1px;
 }
 .portfolio-btn li:not(:last-child) {
   margin-right: 8px;
@@ -567,6 +570,8 @@ ul.list.portfolio-btn {
 .button-secondary:hover {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 ul.list-of-exmp {
   display: flex;
