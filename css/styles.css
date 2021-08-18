@@ -442,18 +442,18 @@ button {
 .customer-icon-list {
   width: 170px;
   height: 92px;
-  border: solid 1px #afb1b8;
+  /* border: solid 1px #afb1b8; */
   margin-right: 30px;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* border-radius: 4px; */
 }
 
-.customer-icon-list:hover,
-.customer-icon-list:focus {
+.customer-icon-link:hover,
+.customer-icon-link:focus {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.customer-icon-list:hover .customer-icon,
-.customer-icon-list:focus .customer-icon {
+.customer-icon-link:hover .customer-icon,
+.customer-icon-link:focus .customer-icon {
   fill: var(--accent-color);
 }
 
@@ -462,7 +462,13 @@ button {
   width: 170px;
   height: 92px;
   align-items: center;
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  background-color: transparent;
+  fill: rgba(175, 177, 184, 1);
   justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======  FOOTER ========= */
