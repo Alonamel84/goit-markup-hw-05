@@ -676,7 +676,8 @@ li.item:nth-child(-n + 6) {
   pointer-events: none;
 }
 .modal {
-  position: absolute;
+  padding: 40px;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -688,6 +689,9 @@ li.item:nth-child(-n + 6) {
 }
 .close-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -697,4 +701,8 @@ li.item:nth-child(-n + 6) {
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+}
+.close-btn:hover .modal-closed-btn {
+  fill: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
