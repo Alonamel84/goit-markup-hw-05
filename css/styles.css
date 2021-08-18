@@ -266,16 +266,11 @@ img {
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
-  position: sticky;
-  height: 100%;
+  position: absolute;
   width: 100%;
-  top: 0%;
+  bottom: 0%;
   left: 0%;
   overflow: initial;
-  transform: translateY(-100%);
-}
-.scope-description-overlay {
-  position: relative;
 }
 
 .section-title {
@@ -297,6 +292,7 @@ img {
 .item-photo-work {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--card-set-item);
+  position: relative;
 }
 
 /*==========  buttons parameters =====*/
@@ -333,24 +329,21 @@ button {
   background-color: #ffffff;
   border-bottom: rgba(0, 0, 0, 0.25) solid 4px;
   border-radius: 4px;
-}
-
-.team-photo {
-  padding: 30px 0 30px 0px;
+  padding: 30px 32px 30px 32px;
   text-align: center;
 }
+
 .list.teamcards {
   display: flex;
   flex-wrap: wrap;
-}
-
-li.team-members {
-  margin-right: 30px;
-  width: 270px;
-}
-ul.list.teamcards {
   margin-right: -30px;
 }
+
+.team-members {
+  margin-right: 30px;
+  /* width: 270px; */
+}
+
 .name {
   color: var(--title-text-color);
 
@@ -375,9 +368,14 @@ ul.list.teamcards {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
-  margin: 0 auto;
+  margin-right: -10px;
+}
+
+.social-list-item {
+  margin-right: 10px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-list-link {
@@ -411,28 +409,27 @@ ul.list.teamcards {
 
 /* =====CUSTOMERS =======*/
 
-.container.customers {
+.customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .customer-list {
-  width: 1170px;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  margin-right: -30px;
 }
 
 .customer-icon-list {
-  display: flex;
   width: 170px;
   height: 92px;
   border: solid 1px #afb1b8;
+  margin-right: 30px;
 }
 .customers-icon-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  display: block;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
 }
 .customers-icon-link .customer-icon:focus,
 .customers-icon-link .customer-icon:hover {
@@ -444,15 +441,18 @@ ul.list.teamcards {
 .customer-icon-list:focus {
   border-color: var(--accent-color);
 }
+.customer-icon-list:hover .customer-icon,
+.customer-icon-list:focus .customer-icon {
+  fill: var(--accent-color);
+}
 
 .customer-icon {
   fill: #afb1b8;
 }
-
 /* ======  FOOTER ========= */
 footer {
   background-color: #2f303a;
-  /* padding-top: 60px; */
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -462,7 +462,6 @@ footer {
 }
 .left-footer {
   margin-right: 70px;
-  padding-top: 60px;
 }
 
 .address {
@@ -639,7 +638,7 @@ li.item:nth-child(-n + 6) {
   overflow: hidden;
 }
 
-.card-overlay:hover .text-overlay {
+.card-overlay-link:hover .text-overlay {
   transform: translateY(0%);
 }
 
